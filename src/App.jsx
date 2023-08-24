@@ -133,9 +133,11 @@ function App() {
         trigger={() => <Button className="w-[150px] mx-3">Print</Button>}
         content={() => componentRef.current}
       />
-      <Button onClick={() => navigate("/inputform")} color="red">
-        Back
-      </Button>
+      
+       <a href="/">
+        <Button className="bg-red-400">Back</Button>
+       </a>
+ 
     </main>
   );
 }
