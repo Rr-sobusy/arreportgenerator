@@ -14,6 +14,16 @@ function Form() {
     setTable1Amt4,
     setTable1No5,
     setTable1Amt5,
+    setTable1No6,
+    setTable1Amt6,
+    setTable1No7,
+    setTable1Amt7,
+    setTable1No8,
+    setTable1Amt8,
+    setTable1No9,
+    setTable1Amt9,
+    setTable1No10,
+    setTable1Amt10,
     setNo,
     setDate,
     setReceived,
@@ -40,17 +50,17 @@ function Form() {
   return (
     <>
       <div className="min-h-screen min-w-screen px-20 py-20 grid bg-[#AFB2C2]">
-        <div className="bg-white rounded-md px-4 py-4">
+        <div className="px-4 py-4 bg-white rounded-md">
           <div>
-            <p className="font-bold text-gray-800 text-lg ml-10 mb-5">
+            <p className="mb-5 ml-10 text-lg font-bold text-gray-800">
               Acknowledgement Receipt
             </p>
           </div>
           <div className="grid grid-cols-3">
-            <div className=" ml-20">
+            <div className="ml-20 ">
               <div className="flex flex-row gap-4 mb-2">
                 <p className="text-sm text-gray-500">Debit Note No.</p>
-                <p className="text-sm text-gray-500 ml-2">Amount</p>
+                <p className="ml-2 text-sm text-gray-500">Amount</p>
               </div>
               <div className="flex flex-row gap-4 mb-2">
                 <input
@@ -112,75 +122,135 @@ function Form() {
                   className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
                 />
               </div>
+              <div className="flex flex-row gap-4 mb-2">
+                <input
+                  onChange={(e) => setTable1No6(e.target.value)}
+                  type="text"
+                  className="border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+                <input
+                  onChange={(e) => setTable1Amt6(e.target.value)}
+                  type="text"
+                  className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+              </div>
+              <div className="flex flex-row gap-4 mb-2">
+                <input
+                  onChange={(e) => setTable1No7(e.target.value)}
+                  type="text"
+                  className="border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+                <input
+                  onChange={(e) => setTable1Amt7(e.target.value)}
+                  type="text"
+                  className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+              </div>
+              <div className="flex flex-row gap-4 mb-2">
+                <input
+                  onChange={(e) => setTable1No8(e.target.value)}
+                  type="text"
+                  className="border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+                <input
+                  onChange={(e) => setTable1Amt8(e.target.value)}
+                  type="text"
+                  className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+              </div>
+              <div className="flex flex-row gap-4 mb-2">
+                <input
+                  onChange={(e) => setTable1No9(e.target.value)}
+                  type="text"
+                  className="border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+                <input
+                  onChange={(e) => setTable1Amt9(e.target.value)}
+                  type="text"
+                  className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+              </div>
+              <div className="flex flex-row gap-4 mb-2">
+                <input
+                  onChange={(e) => setTable1No10(e.target.value)}
+                  type="text"
+                  className="border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+                <input
+                  onChange={(e) => setTable1Amt10(e.target.value)}
+                  type="text"
+                  className=" border-gray-300 outline-none px-4 text-sm py-1 border rounded-md w-[100px]"
+                />
+              </div>
             </div>
             <div className="flex flex-col">
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 No.
               </label>
               <input
                 onChange={(e) => setNo(e.target.value)}
                 type="number"
-                className="w-1/5 py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-1/5 px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Date
               </label>
               <input
                 onChange={(e) => setDate(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Received
               </label>
               <input
                 onChange={(e) => setReceived(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Address
               </label>
               <input
                 onChange={(e) => setAddress(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Tin
               </label>
               <input
                 onChange={(e) => setTin(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Business Style of
               </label>
               <input
                 onChange={(e) => setBusinessStyle(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Sum of
               </label>
               <input
                 onChange={(e) => setPesos(e.target.value)}
                 type="number"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
-              <label className="text-gray-500 text-sm" htmlFor="">
+              <label className="text-sm text-gray-500" htmlFor="">
                 Payment for
               </label>
               <input
                 onChange={(e) => setPaymentFor(e.target.value)}
                 type="text"
-                className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
               />
               <button
                 onClick={() => navigate("/app")}
-                className="w-full border py-2 mt-5 font-bold uppercase rounded-md border-black"
+                className="w-full py-2 mt-5 font-bold uppercase border border-black rounded-md"
               >
                 Preview
               </button>
@@ -196,82 +266,82 @@ function Form() {
                     key={key}
                     type="radio"
                   />
-                  <label htmlFor="" className="text-gray-500 text-sm">
+                  <label htmlFor="" className="text-sm text-gray-500">
                     {radio}
                   </label>
                 </div>
               ))}
-              <div className="col-span-2 grid justify-center text-gray-500 text-sm">
+              <div className="grid justify-center col-span-2 text-sm text-gray-500">
                 <h1>Amount</h1>
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Price1(e.target.value)}
                   type="text"
-                  className="w-full py-1  text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Amt1(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Price2(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Amt2(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Price3(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Amt3(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-6">
                 <input
                   onChange={(e) => setTable2Price4(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-6">
                 <input
                   onChange={(e) => setTable2Amt4(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-6">
                 <input
                   onChange={(e) => setTable2Price5(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
               <div className="col-span-2 -mt-8">
                 <input
                   onChange={(e) => setTable2Amt5(e.target.value)}
                   type="text"
-                  className="w-full py-1 text-sm border-gray-300 px-2 rounded-md border outline-none"
+                  className="w-full px-2 py-1 text-sm border border-gray-300 rounded-md outline-none"
                 />
               </div>
             </div>
